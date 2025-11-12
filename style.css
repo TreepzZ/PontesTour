@@ -1,0 +1,419 @@
+/* Definições Gerais e Reset */
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, sans-serif;
+    color: #1f2c4c;
+    background-color: #ffffff;
+}
+
+/* Container para centralizar o conteúdo */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* Destaque para títulos e frases-chave */
+.highlight {
+    color: #1ab37d;
+    font-weight: 800;
+}
+
+.section {
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+}
+
+.section-description {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 3rem;
+}
+
+/* --- Cabeçalho com Vídeo de Fundo --- */
+header {
+    background: none; 
+    background-color: #0d2c54; 
+    color: white;
+    padding: 0; 
+    text-align: center;
+    position: relative;
+    height: 400px; /* Altura fixa para o cabeçalho */
+    overflow: hidden; 
+}
+
+/* Estilização do Vídeo para preencher o fundo */
+#header-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    transform: translate(-50%, -50%);
+    filter: blur(2px); 
+}
+
+/* Overlay para escurecer o vídeo e garantir a legibilidade do texto */
+.header-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(13, 44, 84, 0.6); 
+    z-index: 1;
+}
+
+/* --- Conteúdo do Cabeçalho (CENTRALIZAÇÃO PERFEITA) --- */
+.header-content {
+    position: relative;
+    z-index: 2; 
+    text-align: center;
+    padding: 0; 
+    
+    /* Centralização vertical via Flexbox */
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    height: 100%; 
+}
+
+/* Ajustes no h1 */
+header h1 {
+    margin: 0; /* Remove todas as margens padrão */
+    font-size: 3.8rem;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    text-align: center; 
+}
+
+
+/* Reduz a margem superior do texto principal */
+header p {
+    margin-top: 1.5rem; 
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+/* Ajusta o espaçamento do subtítulo (a linha menor) */
+.subtitle {
+    margin-top: 0.5rem !important; 
+    margin-bottom: 2rem !important; 
+    font-size: 1.3rem !important;
+    font-weight: 400 !important;
+    opacity: 0.9;
+}
+
+/* Estilo do Botão no Cabeçalho (SOLUÇÃO DEFINITIVA PARA DIMENSÃO) */
+.header-cta {
+    margin-top: 1rem; 
+    
+    /* VALORES PARA DEIXAR O BOTÃO COMPACTO */
+    font-size: 1.2rem; 
+    padding: 0.8rem 2.0rem; 
+    
+    /* AJUSTES CHAVE PARA LARGURA E CENTRALIZAÇÃO */
+    display: block; /* Mudar para block para que o margin auto funcione */
+    width: fit-content; /* LARGURA DE APENAS O CONTEÚDO */
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Propriedades visuais */
+    box-shadow: 0 4px 10px rgba(26, 179, 125, 0.4);
+    
+    /* O restante das propriedades é herdado de .cta-button */
+}
+
+/* --- Seção Sobre Nós --- */
+.sobre-nos {
+    background-color: #f8faff; 
+}
+
+.info-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 3rem;
+    flex-wrap: wrap;
+}
+
+.info-box {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    width: 280px;
+    transition: transform 0.3s;
+    text-align: left;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+}
+
+.info-box h3 {
+    color: #0d2c54;
+    margin-top: 0;
+    font-size: 1.3rem;
+}
+
+.info-box p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+/* --- Destinos Principais --- */
+.destinos-principais {
+    background-color: #ffffff;
+}
+
+.destinos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.destino {
+    width: 300px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+}
+
+.destino:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.destino img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.destino-info {
+    padding: 1.5rem;
+}
+
+.destino-info h3 {
+    font-size: 1.5rem;
+    color: #0d2c54;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.destino-info p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    min-height: 40px;
+}
+
+.destino-info a {
+    display: inline-block;
+    background-color: #1ab37d;
+    color: white;
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.destino-info a:hover {
+    background-color: #159868;
+}
+
+.preco-inicial {
+    margin-top: 3rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #0d2c54;
+}
+
+/* --- CTA (Call to Action) --- */
+.cta {
+    background-color: #f0f4f7;
+    padding: 5rem 1rem;
+    text-align: center; 
+}
+
+.cta h2 {
+    color: #0d2c54;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.cta p {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #1ab37d;
+    color: white;
+    padding: 1.2rem 3rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 50px;
+    margin-top: 1rem;
+    box-shadow: 0 6px 20px rgba(26, 179, 125, 0.4);
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.cta-button:hover {
+    background-color: #159868;
+    transform: translateY(-2px);
+}
+
+/* --- Rodapé --- */
+footer {
+    background-color: #0d2c54;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.85rem;
+}
+
+/* --- Estilo do CTA Fixo (WhatsApp) --- */
+.whatsapp-fixed-cta {
+    position: fixed; 
+    bottom: 30px; 
+    right: 30px; 
+    z-index: 1000; 
+    background-color: #25D366; 
+    color: white;
+    width: 60px; 
+    height: 60px;
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s;
+}
+
+.whatsapp-fixed-cta:hover {
+    transform: scale(1.1); 
+}
+
+/* Tamanho do SVG (Ícone) dentro do botão fixo */
+.whatsapp-fixed-cta svg {
+    width: 30px;
+    height: 30px;
+}
+
+/* Media Queries para Responsividade */
+@media (max-width: 768px) {
+    
+    header {
+        height: 350px;
+    }
+    
+    .section h2 {
+        font-size: 1.8rem;
+    }
+    
+    header h1 {
+        font-size: 2.5rem;
+        margin-top: 0; 
+    }
+    
+    header p {
+        font-size: 1.2rem;
+    }
+    
+    .header-cta {
+        font-size: 1.1rem;
+        padding: 1rem 2rem;
+    }
+    
+    .cta-button {
+        font-size: 1.1rem;
+        padding: 1rem 2rem;
+    }
+    
+    .info-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-box {
+        width: 90%;
+    }
+    .destino {
+        width: 90%;
+    }
+    
+    /* Reduz o tamanho do botão fixo em celulares para não atrapalhar */
+    .whatsapp-fixed-cta {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+    }
+    .whatsapp-fixed-cta svg {
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/* NOVO: Estilização e Posicionamento do Seletor de Idiomas */
+.language-selector {
+    position: absolute;
+    top: 20px; /* Distância do topo */
+    right: 30px; /* Distância da direita */
+    z-index: 100; /* Garante que fique acima de tudo */
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.language-selector a {
+    color: white;
+    text-decoration: none;
+    padding: 0 5px;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.language-selector a:hover {
+    opacity: 1;
+}
+
+.language-selector a.active {
+    opacity: 1;
+    color: #1ab37d; /* Destaca o idioma atual com a cor da marca */
+    font-weight: 800;
+}
+
+
+/* --- Media Queries (Ajuste para móvel) --- */
+@media (max-width: 768px) {
+    /* ... (outras regras) ... */
+
+    /* Ajusta a posição do seletor de idiomas em telas menores */
+    .language-selector {
+        top: 15px;
+        right: 15px;
+        font-size: 0.9rem;
+    }
+}

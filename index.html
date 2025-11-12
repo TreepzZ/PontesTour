@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-key="page-title">Transfer Aeroporto Recife</title>
+  <link rel="stylesheet" href="style.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <video autoplay muted loop poster="poster_praia.jpg" id="header-video">
+        <source src="videos/fundo_praia.mp4" type="video/mp4">
+        Seu navegador não suporta vídeos em HTML5.
+    </video>
+    
+    <div class="header-overlay"></div> 
+    
+    <div class="language-selector">
+        <a href="#" class="lang-option active" data-lang="pt">PT</a> | 
+        <a href="#" class="lang-option" data-lang="en">EN</a> |
+        <a href="#" class="lang-option" data-lang="es">ES</a>
+    </div>
+
+    <div class="header-content">
+        <h1>PONTE <span class="highlight">TRANSFER</span></h1>
+        <p data-key="header-text">Seu transporte executivo do Aeroporto de Recife para os melhores destinos de Pernambuco.</p>
+        <p class="subtitle" data-key="header-subtitle">Conforto e segurança em carro executivo, carro 7 lugares ou van.</p>
+        <a href="https://wa.me/5581999999999" target="_blank" class="cta-button header-cta" data-key="cta-header-button">GARANTA SEU TRANSFER AGORA!</a>
+    </div>
+</header>
+
+<section class="section sobre-nos">
+    <div class="container">
+      <h2 data-key="about-title"><span class="highlight">SOBRE</span> NÓS</h2>
+      <p class="section-description" data-key="about-description">A Pontes Transfer é a sua parceira ideal para viagens seguras e pontuais a partir do Aeroporto Internacional de Recife (REC). </p>
+      
+      <div class="info-boxes">
+          <div class="info-box">
+              <h3 data-key="box1-title">✅ Segurança</h3>
+              <p data-key="box1-text">Motoristas experientes e veículos revisados, garantindo sua tranquilidade durante todo o trajeto.</p>
+          </div>
+          <div class="info-box">
+              <h3 data-key="box2-title">⏱ Pontualidade</h3>
+              <p data-key="box2-text">Compromisso com o seu horário. Estamos esperando por você na hora exata da sua chegada.</p>
+          </div>
+          <div class="info-box">
+              <h3 data-key="box3-title">💎 Conforto</h3>
+              <p data-key="box3-text">Carros novos, climatizados e com toda a comodidade para a sua família.</p>
+          </div>
+      </div>
+    </div>
+</section>
+
+<section class="section destinos-principais">
+    <div class="container">
+        <h2 data-key="destinations-title">DESTINOS <span class="highlight">PRINCIPAIS</span></h2>
+        <p class="section-description" data-key="destinations-description">As praias mais famosas de Pernambuco estão a apenas um transfer de distância.</p>
+        
+        <div class="destinos">
+            <div class="destino">
+                <img src="imagens/porto_de_galinhas.png" alt="Porto de Galinhas">
+                <div class="destino-info">
+                    <h3 data-key="dest1-name">Porto de Galinhas</h3>
+                    <p data-key="dest1-desc">Piscinas naturais e beleza inigualável. O destino mais procurado.</p>
+                    <a href="https://wa.me/5581991087533" class="cta-button" data-key="dest-button">Orçar Transfer</a>
+                </div>
+            </div>
+            <div class="destino">
+                <img src="imagens/praia_carneiros.jpg" alt="Praia dos Carneiros">
+                <div class="destino-info">
+                    <h3 data-key="dest2-name">Praia dos Carneiros</h3>
+                    <p data-key="dest2-desc">Coqueiros e águas cristalinas. Cenário perfeito para relaxar.</p>
+                    <a href="https://wa.me/5581991087533" class="cta-button" data-key="dest-button">Orçar Transfer</a>
+                </div>
+            </div>
+             <div class="destino">
+                <img src="imagens/muro_alto.jpg" alt="Muro Alto">
+                <div class="destino-info">
+                    <h3 data-key="dest3-name">Muro Alto</h3>
+                    <p data-key="dest3-desc">Piscinas naturais formadas por arrecifes, ideal para famílias com crianças.</p>
+                    <a href="https://wa.me/5581991087533" class="cta-button" data-key="dest-button">Orçar Transfer</a>
+                </div>
+            </div>
+            </div>
+        <p class="preco-inicial" data-key="starting-price">A partir de R$ 150</p>
+    </div>
+</section>
+
+<section class="section where-are-you">
+    <div class="container">
+        <h2 data-key="map-title">ONDE VOCÊ <span class="highlight" data-key="map-title-highlight">ESTÁ?</span></h2>
+        <p class="section-description" data-key="map-description">Localize-se no mapa para planejar seu transfer a partir de sua localização atual.</p>
+        <div id="user-map-container" style="height: 400px; width: 100%; margin-top: 20px; background-color: #eee; display: flex; align-items: center; justify-content: center; border-radius: 8px;">
+            <p style="color: #666; font-style: italic;">(Mapa de localização do usuário será carregado aqui)</p>
+        </div>
+    </div>
+</section>
+
+<section class="cta">
+    <div class="container">
+        <h2 data-key="cta-title">VIAGEM SEGURA E SEM <span class="highlight" data-key="cta-title-highlight">PREOCUPAÇÕES</span></h2>
+        <p data-key="cta-text">Garanta o melhor preço e a melhor experiência para o seu transporte em Pernambuco. Fale conosco agora!</p>
+        <a href="https://wa.me/5581991087533" target="_blank" class="cta-button" data-key="cta-button-bottom">GARANTA SEU TRANSFER!</a>
+    </div>
+</section>
+
+<footer>
+    <p data-key="footer-text">© 2024 Pontes Transfer. Todos os direitos reservados.</p>
+</footer>
+
+<a href="https://wa.me/5581991087533" class="whatsapp-fixed-cta" target="_blank" aria-label="WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M380.9 97.1C339 55.1 283 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L5.9 458.7l116.3-30.3c31.1 17.5 65.5 27.1 100.8 27.1h.1c122.3 0 222-99.6 222-222 0-59.3-22.1-115-61.1-157zM223.9 448H224c32.7 0 65.3-8.9 93.3-25.5l.3-.2 71.3 18.7-18.7-71.3.2-.3c18.3-28 27.5-60 27.5-93.5 0-101.4-82.8-184.2-184.2-184.2-101.3 0-184 82.8-184 184.2 0 101.3 82.7 184.1 184.1 184.1zm116.1-94.8c-.8-.8-2.6-1.5-5.3-2.6-2.5-1.1-14.7-7.2-17-8.1-2.3-.9-4-.8-5.3.8-1.3 1.6-4.9 5.3-6 6.5-1.1 1.2-2.3 1.3-4.3.8-2.4-.7-9.5-3.5-18.1-11.2-6.7-5.9-11.2-13.3-12.5-15.5-1.3-2.3-.1-2.8 1.1-4.8 1.1-1.9 2.5-4.8 3.8-7.2 1.3-2.3 1.7-1.9.9-3.5-.8-1.6-3-6.5-4.2-8.8-1.2-2.3-2.5-1.9-4.2-1.9-1.6 0-3.5.2-5.3.2-1.8 0-4.8.7-7.3 3.5-2.4 2.8-9.1 8.9-9.1 22.3 0 13.4 9.3 25.8 10.6 27.5 1.2 1.8 18.2 27.9 44.5 38.6 2.4 1 4.5 1.6 6.3 1.6 1.8 0 4.7-.7 6.3-2.1 1.6-1.4 3.8-13.4 3.8-15.1-.1-1.7-.8-2.6-1.7-3.4z"/></svg>
+</a>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
