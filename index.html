@@ -4,14 +4,16 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title data-key="page-title">Transfer Aeroporto Recife</title>
-  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="style.css?v=1002">
+<script src="script.js?v=1002"></script>
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <header>
     <video autoplay muted loop poster="poster_praia.jpg" id="header-video">
-        <source src="videos/fundo_praia.mp4" type="video/mp4">
+        <source src="./fundo_praia.mp4" type="video/mp4">
         Seu navegador não suporta vídeos em HTML5.
     </video>
     
@@ -107,7 +109,7 @@
 </section>
 
 <footer>
-    <p data-key="footer-text">© 2024 Pontes Transfer. Todos os direitos reservados.</p>
+    <p id="footer">© <span id="year"></span> 2025 Pontes Transfer. Todos os direitos reservados.</p>
 </footer>
 
 <a href="https://wa.me/5581991087533" class="whatsapp-fixed-cta" target="_blank" aria-label="WhatsApp">
@@ -116,6 +118,7 @@
 
 
 <script src="script.js"></script>
+
 
 </body>
 </html>
