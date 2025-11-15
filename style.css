@@ -19,6 +19,8 @@ body {
     font-weight: 800;
 }
 
+
+
 .section {
     padding: 4rem 1rem;
     text-align: center;
@@ -327,6 +329,7 @@ footer {
     
     header {
         height: 350px;
+       
     }
     
     .section h2 {
@@ -334,12 +337,14 @@ footer {
     }
     
     header h1 {
-        font-size: 2.5rem;
-        margin-top: 0; 
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+        margin-top: 2rem; 
     }
     
-    header p {
-        font-size: 1.2rem;
+    header p:nth-of-type(1) {
+        font-size: 1.1rem;
+        margin-top: 0.8rem;
     }
     
     .header-cta {
@@ -350,6 +355,7 @@ footer {
     .cta-button {
         font-size: 1.1rem;
         padding: 1rem 2rem;
+        margin-top: -1.9rem;
     }
     
     .info-boxes {
@@ -417,3 +423,34 @@ footer {
         font-size: 0.9rem;
     }
 }
+
+/* ===== CORREÇÃO DEFINITIVA DO MAPA NO CELULAR ===== */
+
+#user-map-container {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 8px;
+    display: block !important; /* remove flex do inline */
+    text-align: center;
+}
+
+#user-map-container iframe {
+    width: 100% !important;
+    height: 350px !important;
+    border: none;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    #user-map-container {
+        padding: 5px;
+    }
+
+    #user-map-container iframe {
+        height: 300px !important;
+    }
+}
+
