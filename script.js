@@ -227,7 +227,7 @@ function initializeUserMap() {
                 
                 // Em um ambiente real, o mapa do Google Maps seria injetado aqui.
                 // Usaremos um link de mapa estático de exemplo para simulação:
-                const mapUrl = `http://maps.google.com/maps?q=${lat},${lng}&z=15&output=embed`;
+                const mapUrl = `https://maps.google.com/maps?q=${lat},${lng}&z=15&output=embed`;
                 
                 mapContainer.innerHTML = `
                     <p style="font-size: 1rem; color: #1f2c4c; margin-bottom: 10px;">
@@ -264,5 +264,10 @@ document.addEventListener('DOMContentLoaded', () => {
     // CHAMADA FINAL DA FUNÇÃO DO MAPA
     initializeUserMap(); 
 });
+
+// Nota de segurança: O JS usa innerHTML apenas em casos específicos para manter o span, mas o conteúdo é seguro.
+
+document.getElementById("year").textContent = new Date().getFullYear();
+
 
 // Nota de segurança: O JS usa innerHTML apenas em casos específicos para manter o span, mas o conteúdo é seguro.
